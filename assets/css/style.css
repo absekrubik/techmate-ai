@@ -1,0 +1,196 @@
+/* =========================================================
+   Techmate AI - Global Styles
+   ========================================================= */
+
+/* ========================================
+   Body
+======================================== */
+
+body {
+    position: relative;
+    background: var(--gradient-dark);
+    color: var(--color-text);
+    overflow-x: hidden;
+}
+
+/* ========================================
+   Background Glow
+======================================== */
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    top: -300px;
+    right: -300px;
+
+    width: 700px;
+    height: 700px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37,99,235,.12),
+            transparent 70%
+        );
+
+    pointer-events: none;
+
+    z-index: -2;
+
+    filter: blur(40px);
+}
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    bottom: -350px;
+    left: -300px;
+
+    width: 700px;
+    height: 700px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124,58,237,.10),
+            transparent 70%
+        );
+
+    pointer-events: none;
+
+    z-index: -2;
+
+    filter: blur(60px);
+}
+
+/* ========================================
+   Noise Overlay
+======================================== */
+
+.site-wrapper::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    opacity: .03;
+
+    background-image:
+        radial-gradient(#ffffff 0.4px, transparent 0.4px);
+
+    background-size: 18px 18px;
+
+    z-index: -1;
+}
+
+/* ========================================
+   Scrollbar
+======================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050B18;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        180deg,
+        #2563EB,
+        #06B6D4
+    );
+
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3B82F6;
+}
+
+/* Firefox */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #2563EB #050B18;
+}
+
+/* ========================================
+   Section Background Helpers
+======================================== */
+
+.bg-surface {
+    background: var(--color-surface);
+}
+
+.bg-glass {
+    background: rgba(255,255,255,.03);
+    backdrop-filter: blur(18px);
+}
+
+.bg-gradient {
+    background: var(--gradient-primary);
+}
+
+/* ========================================
+   Utility Helpers
+======================================== */
+
+.hidden {
+    display: none !important;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.text-gradient {
+    background: var(--gradient-primary);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+/* ========================================
+   Image Defaults
+======================================== */
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* ========================================
+   Smooth GPU Rendering
+======================================== */
+
+.glass-card,
+.card,
+.btn,
+img,
+section {
+    will-change: transform;
+}
+@import url("trusted.css");
+@import url("achievements.css");
+@import url("services.css");
+@import url("footer.css");

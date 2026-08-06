@@ -1,0 +1,184 @@
+/* =========================================================
+   Techmate AI - Typography
+   ========================================================= */
+
+/* ========================================
+   Body
+======================================== */
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-body);
+
+    color: var(--color-text);
+
+    background: var(--color-bg);
+
+    overflow-x: hidden;
+}
+
+/* ========================================
+   Headings
+======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+
+    font-weight: var(--fw-bold);
+
+    color: var(--color-white);
+
+    line-height: var(--lh-heading);
+
+    letter-spacing: -0.03em;
+}
+
+/* ========================================
+   Heading Scale
+======================================== */
+
+h1 {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+}
+
+h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h3 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h4 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h5 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+h6 {
+    font-size: 1.125rem;
+}
+
+/* ========================================
+   Paragraphs
+======================================== */
+
+p {
+    color: var(--color-text-muted);
+
+    max-width: 65ch;
+}
+
+/* ========================================
+   Links
+======================================== */
+
+a {
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/* ========================================
+   Utility Classes
+======================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+/* ========================================
+   Display Heading
+======================================== */
+
+.display-title {
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(4rem, 8vw, 6.5rem);
+
+    font-weight: var(--fw-extrabold);
+
+    line-height: 1.05;
+
+    letter-spacing: -0.05em;
+
+    color: var(--color-white);
+}
+
+/* ========================================
+   Section Heading
+======================================== */
+
+.section-title {
+
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    font-weight: var(--fw-bold);
+
+    margin-bottom: var(--space-4);
+}
+
+.section-subtitle {
+
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+
+    color: var(--color-text-muted);
+
+    max-width: 700px;
+}
+
+/* ========================================
+   Gradient Text
+======================================== */
+
+.gradient-text {
+
+    background: var(--gradient-primary);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+
+    color: transparent;
+}
+
+/* ========================================
+   Text Balance
+======================================== */
+
+.balance {
+    text-wrap: balance;
+}

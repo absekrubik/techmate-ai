@@ -1,0 +1,108 @@
+/*==========================================
+Achievements
+==========================================*/
+
+.achievements{
+
+    padding:140px 0;
+
+}
+
+.achievement-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.achievement-card{
+
+    padding:40px;
+
+    border-radius:24px;
+
+    transition:.4s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(37,99,235,.35);
+
+}
+
+.achievement-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(37,99,235,.08);
+
+    font-size:1.8rem;
+
+    margin-bottom:30px;
+
+}
+
+.achievement-card h3{
+
+    font-size:3rem;
+
+    line-height:1;
+
+    margin-bottom:10px;
+
+}
+
+.achievement-card span{
+
+    color:var(--color-secondary);
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+}
+
+.achievement-card h4{
+
+    margin:20px 0 14px;
+
+}
+
+.achievement-card p{
+
+    color:var(--color-text-muted);
+
+    line-height:1.8;
+
+}
+@media (max-width:768px){
+
+    .achievement-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

@@ -1,0 +1,182 @@
+/* =========================================================
+   Techmate AI - Layout System
+   ========================================================= */
+
+/* ========================================
+   Main Wrapper
+======================================== */
+
+.site-wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+/* ========================================
+   Container
+======================================== */
+
+.container {
+    width: min(100% - (var(--container-padding) * 2), var(--container-width));
+    margin-inline: auto;
+}
+
+/* ========================================
+   Section
+======================================== */
+
+.section {
+    position: relative;
+    padding-block: clamp(5rem, 8vw, 8rem);
+}
+
+.section-sm {
+    padding-block: clamp(3rem, 5vw, 5rem);
+}
+
+.section-lg {
+    padding-block: clamp(7rem, 10vw, 10rem);
+}
+
+/* ========================================
+   Grid
+======================================== */
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* 12 Column Grid */
+
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+/* ========================================
+   Flex Utilities
+======================================== */
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================
+   Alignment
+======================================== */
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* ========================================
+   Width Utilities
+======================================== */
+
+.w-full {
+    width: 100%;
+}
+
+.max-content {
+    max-width: 700px;
+}
+
+.max-wide {
+    max-width: 900px;
+}
+
+/* ========================================
+   Gap Utilities
+======================================== */
+
+.gap-sm {
+    gap: 1rem;
+}
+
+.gap-md {
+    gap: 2rem;
+}
+
+.gap-lg {
+    gap: 3rem;
+}
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 1024px) {
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-12 {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-between {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+}

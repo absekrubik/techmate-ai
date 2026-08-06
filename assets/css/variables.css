@@ -1,0 +1,164 @@
+/* =========================================================
+   Techmate AI Design Tokens
+   ========================================================= */
+
+:root {
+
+    /* ========================================
+       Brand Colors
+    ======================================== */
+
+    --color-bg: #020617;
+    --color-surface: #0F172A;
+    --color-surface-light: #16213A;
+
+    --color-primary: #2563EB;
+    --color-secondary: #06B6D4;
+    --color-accent: #7C3AED;
+
+    --color-white: #F8FAFC;
+    --color-text: #E2E8F0;
+    --color-text-muted: #94A3B8;
+
+    --color-border: rgba(255, 255, 255, 0.08);
+
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+    --color-danger: #EF4444;
+
+    /* ========================================
+       Gradients
+    ======================================== */
+
+    --gradient-primary:
+        linear-gradient(135deg,
+            #2563EB 0%,
+            #06B6D4 50%,
+            #7C3AED 100%);
+
+    --gradient-dark:
+        linear-gradient(180deg,
+            #020617 0%,
+            #0F172A 100%);
+
+    --gradient-glow:
+        radial-gradient(circle,
+            rgba(37, 99, 235, .30),
+            rgba(2, 6, 23, 0));
+
+    /* ========================================
+       Typography
+    ======================================== */
+
+    --font-heading: "Sora", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    --fs-xs: .75rem;
+    --fs-sm: .875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.25rem;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 2rem;
+    --fs-4xl: 2.75rem;
+    --fs-5xl: 3.5rem;
+    --fs-6xl: 4.5rem;
+
+    /* ========================================
+       Font Weight
+    ======================================== */
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+
+    /* ========================================
+       Line Heights
+    ======================================== */
+
+    --lh-tight: 1.1;
+    --lh-heading: 1.2;
+    --lh-body: 1.7;
+
+    /* ========================================
+       Spacing System (8px)
+    ======================================== */
+
+    --space-1: .25rem;
+    --space-2: .5rem;
+    --space-3: .75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+
+    /* ========================================
+       Container Width
+    ======================================== */
+
+    --container-width: 1280px;
+    --container-padding: 1.25rem;
+
+    /* ========================================
+       Border Radius
+    ======================================== */
+
+    --radius-sm: .5rem;
+    --radius-md: .875rem;
+    --radius-lg: 1.25rem;
+    --radius-xl: 1.75rem;
+    --radius-pill: 999px;
+
+    /* ========================================
+       Shadows
+    ======================================== */
+
+    --shadow-sm:
+        0 4px 12px rgba(0, 0, 0, .15);
+
+    --shadow-md:
+        0 10px 30px rgba(0, 0, 0, .25);
+
+    --shadow-lg:
+        0 25px 60px rgba(0, 0, 0, .35);
+
+    /* ========================================
+       Glass Effect
+    ======================================== */
+
+    --glass-bg:
+        rgba(255,255,255,.04);
+
+    --glass-border:
+        rgba(255,255,255,.08);
+
+    --glass-blur:
+        blur(18px);
+
+    /* ========================================
+       Animation
+    ======================================== */
+
+    --transition-fast: .2s ease;
+    --transition-normal: .35s ease;
+    --transition-slow: .6s ease;
+
+    /* ========================================
+       Z Index
+    ======================================== */
+
+    --z-dropdown: 100;
+    --z-sticky: 500;
+    --z-fixed: 1000;
+    --z-modal: 5000;
+    --z-loader: 9999;
+
+}
